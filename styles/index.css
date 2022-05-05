@@ -9,7 +9,6 @@ html,body{
 #app{
     width: 100%;
     height: 100%;
-    background-color: #eeeeee;
 }
 .container{
     width: calc(100% - 200px);
@@ -18,7 +17,7 @@ html,body{
 .header{
     width: 100%;
     height: 120px;
-    background-color: #53868A;
+    background-color: #00000099;
     display: flex;
 }
 .header-left{

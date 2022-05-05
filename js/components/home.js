@@ -17,7 +17,11 @@ Vue.component('home',{
         // 谷歌搜索
         searchGoogle() {
             window.open("https://www.google.com/search?q=" + this.googleKeyword)
-        }
+        },
+        // 打开新窗口
+        openWindow(url) {
+            window.open(url)
+        },
     },
     template:
 `
@@ -41,8 +45,16 @@ Vue.component('home',{
         </el-col>
     </el-row>
     <div class="home-content">
-        <div v-for="(link,i) in favouriteLinks" :key="'link_' + i">
-            <el-link :href="link.url" :underline="false" type="primary" target="_blank">{{link.title}}</el-link>
+        <div class="link-container" v-for="(link,i) in favouriteLinks" :key="'link_type_' + i">
+            <div class="type-title">{{link.type}}</div>
+            <div class="link-type-container">
+                <el-tooltip v-for="(_link,i) in link.links" :key="'link_' + i" class="item" effect="dark" :content="_link.title" placement="top">
+                    <div class="link-item" @click="openWindow(_link.url)">
+                        <img class="icon" :src="_link.icon ? _link.icon : (_link.url + 'favicon.ico')">
+                        <div class="link-title">{{_link.title}}</div>
+                    </div>
+                </el-tooltip>
+            </div>
         </div>
     </div>
 </div>

@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>BigJason.github.io</title>
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="styles/element.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/star.css" />
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
@@ -34,15 +36,16 @@
                     default-active="1"
                     class="header-menu"
                     mode="horizontal"
-                    background-color="#53868A"
-                    text-color="#fff"
-                    active-text-color="#ffd04b">
+                    background-color="#00000099"
+                    text-color="#409EFF"
+                    active-text-color="#409EFF">
                 <el-menu-item index="1">首页</el-menu-item>
             </el-menu>
             <div class="nav-content">
                 <Home/>
             </div>
         </div>
+        <canvas id="canvas"></canvas>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
@@ -50,4 +53,5 @@
 <script src="js/common/config.js"></script>
 <script src="js/components/home.js"></script>
 <script src="js/index.js"></script>
+<script src="js/star.js"></script>
 </html>
