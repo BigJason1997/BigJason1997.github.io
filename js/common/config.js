@@ -118,5 +118,5 @@ const config = {
             ]
         }
     ],
-    websocketUrl: 'ws://110.40.159.23:8080/websocket'
+    websocketUrl: 'wss://110.40.159.23:8080/websocket'
 }
