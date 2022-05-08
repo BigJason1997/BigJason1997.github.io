@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/element.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/tiny-chat.css" />
     <link rel="stylesheet" href="styles/star.css" />
     <link rel="shortcut icon" href="favicon.ico">
 </head>
@@ -33,16 +34,21 @@
                 </div>
             </header>
             <el-menu
-                    default-active="1"
+                    :default-active="menuIndex"
                     class="header-menu"
                     mode="horizontal"
                     background-color="#00000099"
                     text-color="#409EFF"
-                    active-text-color="#409EFF">
-                <el-menu-item index="1">首页</el-menu-item>
+                    active-text-color="#409EFF"
+                    @select="handleSelectMenu">
+                <el-menu-item :index="1">首页</el-menu-item>
+                <el-menu-item :index="2">聊天室</el-menu-item>
             </el-menu>
-            <div class="nav-content">
-                <Home/>
+            <div class="nav-content" v-if="menuIndex === 1">
+                <home />
+            </div>
+            <div class="nav-content" v-if="menuIndex === 2">
+                <tiny-chat />
             </div>
         </div>
         <canvas id="canvas"></canvas>
@@ -51,7 +57,9 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script src="js/common/config.js"></script>
+<script src="js/common/utils.js"></script>
 <script src="js/components/home.js"></script>
+<script src="js/components/tiny-chat.js"></script>
 <script src="js/index.js"></script>
 <script src="js/star.js"></script>
 </html>

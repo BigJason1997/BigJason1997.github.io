@@ -22,7 +22,7 @@
     width: calc(100% - 120px)
 }
 .link-item{
-    width: 140px;
+    min-width: 140px;
     height: 40px;
     color: #409EFF;
     user-select: none;
@@ -47,3 +47,16 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+::-webkit-scrollbar-track-piece {
+     background: #000000;
+    border: 1px solid #333333;
+ }
+
+::-webkit-scrollbar {
+     width: 6px;
+ }
+
+::-webkit-scrollbar-thumb {
+    border: 1px solid #999999;
+     border-radius: 20px;
+ }

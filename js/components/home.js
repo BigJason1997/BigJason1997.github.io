@@ -22,13 +22,23 @@ Vue.component('home',{
         openWindow(url) {
             window.open(url)
         },
+        // 获取图标地址
+        getFavicon(link) {
+            let domain = link.url.split('/'); //以“/”进行分割
+            if( domain[2] ) {
+                domain = domain[0] + '//' + domain[2];
+            } else {
+                domain = ''; //如果url不正确就取空
+            }
+            return domain + '/favicon.ico'
+        }
     },
     template:
 `
 <div class="home">
     <el-row>
         <el-col :span="11">
-            <el-input placeholder="请输入内容" v-model="baiduKeyword" @keyup.enter.native="searchBaidu">
+            <el-input v-model="baiduKeyword" @keyup.enter.native="searchBaidu">
                 <template slot="prepend">
                     <img class="search-logo" src="../../assets/images/icons/baidu.png"/>
                 </template>
@@ -36,7 +46,7 @@ Vue.component('home',{
             </el-input>
         </el-col>
         <el-col :offset="2" :span="11">
-            <el-input placeholder="请输入内容" v-model="googleKeyword" @keyup.enter.native="searchGoogle">
+            <el-input v-model="googleKeyword" @keyup.enter.native="searchGoogle">
                 <template slot="prepend">
                     <img class="search-logo" src="../../assets/images/icons/google.png"/>
                 </template>
@@ -50,7 +60,7 @@ Vue.component('home',{
             <div class="link-type-container">
                 <el-tooltip v-for="(_link,i) in link.links" :key="'link_' + i" class="item" effect="dark" :content="_link.title" placement="top">
                     <div class="link-item" @click="openWindow(_link.url)">
-                        <img class="icon" :src="_link.icon ? _link.icon : (_link.url + 'favicon.ico')">
+                        <img class="icon" :src="_link.icon ? _link.icon : getFavicon(_link)" onerror="this.src='../../assets/images/icons/default_icon.png'">
                         <div class="link-title">{{_link.title}}</div>
                     </div>
                 </el-tooltip>

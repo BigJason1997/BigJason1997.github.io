@@ -8,3 +8,7 @@
 .el-menu.el-menu--horizontal{
     border-bottom: none;
 }
+.el-input-group__append, .el-input-group__prepend,.el-input__inner{
+    border-color: #333333;
+}
+
