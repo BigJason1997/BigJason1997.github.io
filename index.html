@@ -44,10 +44,10 @@
                 <el-menu-item :index="1">首页</el-menu-item>
                 <el-menu-item :index="2">聊天室</el-menu-item>
             </el-menu>
-            <div class="nav-content" v-if="menuIndex === 1">
+            <div class="nav-content" v-show="menuIndex === 1">
                 <home />
             </div>
-            <div class="nav-content" v-if="menuIndex === 2">
+            <div class="nav-content" v-show="menuIndex === 2">
                 <tiny-chat />
             </div>
         </div>
