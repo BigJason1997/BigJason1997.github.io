@@ -111,7 +111,8 @@ Vue.component('tinyChat',{
             <template slot="prepend">
                 <span style="padding: 10px">昵称</span>
             </template>
-    </el-input>
+        </el-input>
+        <el-link type="primary" href="https://110.40.159.23:8080/" target="_blank">如无法连接聊天室，点击此处并继续访问后回到此页面</el-link>
     </div>
     <el-input
       resize="none"
