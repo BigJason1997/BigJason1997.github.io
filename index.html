@@ -41,8 +41,8 @@
                     text-color="#409EFF"
                     active-text-color="#409EFF"
                     @select="handleSelectMenu">
-                <el-menu-item :index="1">首页</el-menu-item>
-                <el-menu-item :index="2">聊天室</el-menu-item>
+                <el-menu-item index="home">首页</el-menu-item>
+                <el-menu-item index="chat">聊天室</el-menu-item>
             </el-menu>
             <div class="nav-content" v-show="menuIndex === 1">
                 <home />

@@ -5,7 +5,7 @@ const vm = new Vue({
             // 昵称
             nickname: config.nickname,
             // 菜单索引
-            menuIndex: 1
+            menuIndex: "home"
         }
     },
     mounted() {
