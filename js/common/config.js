@@ -11,29 +11,6 @@ const config = {
                     url: 'https://fanyi.baidu.com/'
                 },
                 {
-                    title: '若依官网',
-                    url: 'http://www.ruoyi.vip/',
-                    icon: 'http://www.ruoyi.vip/images/favicon.ico'
-                },
-                {
-                    title: 'Element官网',
-                    url: 'https://element.eleme.cn/#/zh-CN/component/installation',
-                    icon: 'https://element.eleme.cn/favicon.ico'
-                },
-                {
-                    title: 'Maven仓库',
-                    url: 'https://mvnrepository.com/',
-                    icon:'https://mvnrepository.com/assets/images/7080b8b0f6f48e6fbaffd5f9d85fcc7f-favicon.ico'
-                },
-                {
-                    title: '码云Gitee',
-                    url: 'https://gitee.com/'
-                },
-                {
-                    title: 'Github',
-                    url: 'https://github.com/'
-                },
-                {
                     title: 'QQ邮箱',
                     url: 'https://mail.qq.com/'
                 },
@@ -78,6 +55,11 @@ const config = {
             type:"资源查询",
             links: [
                 {
+                    title: 'Maven仓库',
+                    url: 'https://mvnrepository.com/',
+                    icon:'https://mvnrepository.com/assets/images/7080b8b0f6f48e6fbaffd5f9d85fcc7f-favicon.ico'
+                },
+                {
                     title: '阿里镜像',
                     url: 'https://developer.aliyun.com/mirror/',
                 },
@@ -114,6 +96,47 @@ const config = {
                 {
                     title: 'cron表达式生成器',
                     url: 'https://cron.qqe2.com/'
+                },
+            ]
+        },
+        {
+            type:"开发社区",
+            links: [
+                {
+                    title: '码云Gitee',
+                    url: 'https://gitee.com/'
+                },
+                {
+                    title: 'Github',
+                    url: 'https://github.com/'
+                },
+                {
+                    title: 'CSDN',
+                    url: 'https://blog.csdn.net/'
+                },
+                {
+                    title: 'Vue',
+                    url: 'https://cn.vuejs.org/v2/guide/',
+                    icon: 'https://cn.vuejs.org/images/logo.svg'
+                },
+                {
+                    title: 'ShardingJDBC',
+                    url: 'https://shardingsphere.apache.org/document/current/cn/overview/',
+                    icon: 'https://shardingsphere.apache.org/document/current/img/favicon.png'
+                },
+                {
+                    title: '若依官网',
+                    url: 'http://www.ruoyi.vip/',
+                    icon: 'http://www.ruoyi.vip/images/favicon.ico'
+                },
+                {
+                    title: 'ElementUI',
+                    url: 'https://element.eleme.cn/#/zh-CN/component/installation',
+                    icon: 'https://element.eleme.cn/favicon.ico'
+                },
+                {
+                    title: 'vxe-table',
+                    url: 'https://vxetable.cn/v3/#/table/start/install',
                 },
             ]
         }
