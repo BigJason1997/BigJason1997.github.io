@@ -22,6 +22,10 @@ const config = {
                     title: '阿里云',
                     url: 'https://www.aliyun.com/'
                 },
+                {
+                    title: '腾讯云',
+                    url: 'https://cloud.tencent.com//'
+                },
             ]
         },
         {
@@ -138,6 +142,23 @@ const config = {
                     title: 'vxe-table',
                     url: 'https://vxetable.cn/v3/#/table/start/install',
                 },
+            ]
+        },
+        {
+            type:"控制面板",
+            links: [
+                {
+                    title: '宝塔Linux（106.53.125.228）',
+                    url: 'http://www.tzy.cool:8888/tencentcloud/',
+                },
+                {
+                    title: '宝塔Linux（虚拟机：192.168.146.140）',
+                    url: 'http://192.168.146.140:8888/94fdd1b5/',
+                },
+                {
+                    title: '宝塔Windows（虚拟机：192.168.146.140）',
+                    url: 'http://110.40.159.23:8888/aI3avzfc/',
+                }
             ]
         }
     ],
