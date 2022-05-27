@@ -156,8 +156,8 @@ const config = {
                     url: 'http://192.168.146.140:8888/94fdd1b5/',
                 },
                 {
-                    title: '宝塔Windows（虚拟机：192.168.146.140）',
-                    url: 'http://110.40.159.23:8888/aI3avzfc/',
+                    title: '宝塔Windows（梅老板）',
+                    url: 'http://meiko.tzy.cool/:8888/aI3avzfc/',
                 }
             ]
         }
