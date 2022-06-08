@@ -62,11 +62,7 @@ Vue.component('tinyChat', {
         },
         // websocket收到消息
         handleReceiveMessage(e) {
-            const message = JSON.parse(
-                e.data.split(
-                    ` [<a href='http://coolaf.com/tool/chattest'>http://coolaf.com</a>]`
-                )[0]
-            );
+            const message = JSON.parse(e.data);
             message.time = new Date();
             this.messageList.push(message);
             this.$nextTick(() => {
@@ -83,8 +79,9 @@ Vue.component('tinyChat', {
         // 发送消息
         sendMessage() {
             try {
+                this.messageInput = this.$refs['msg-input'].innerHTML;
                 this.websocket.send(this.packageMessage());
-                this.messageInput = '';
+                this.$refs['msg-input'].innerHTML = '';
             } catch (ex) {
                 console.error(ex);
                 this.$message.error('消息发送失败');
@@ -103,8 +100,7 @@ Vue.component('tinyChat', {
                     {{new Date().Format('yyyy年MM月dd日 HH:mm:ss')}}
                     </div>
                 </div>
-                <div class="message-content">
-                    {{msg.message}}
+                <div class="message-content" v-html="msg.message">
                 </div>
             </div>
         </div>
@@ -118,6 +114,7 @@ Vue.component('tinyChat', {
         <el-link type="primary" href="https://meiko.tzy.cool:8080/" target="_blank">如无法连接聊天室，点击此处并继续访问后回到此页面</el-link>
     </div>
     <el-input
+    v-if="false"
       resize="none"
       type="textarea"
       :rows="5"
@@ -125,8 +122,9 @@ Vue.component('tinyChat', {
       @keyup.enter.native="sendMessage"
       v-model="messageInput">
     </el-input>
+    <div class="message-input" @keyup.enter="sendMessage" ref="msg-input"></div>
     <div style="margin-top: 10px;overflow: hidden">
-        <el-button plain style="float: right" size="mini" type="primary" @click="sendMessage" :disabled="!messageInput">发送</el-button>
+        <el-button plain style="float: right" size="mini" type="primary" @click="sendMessage">发送</el-button>
     </div>
     </el-card>
 </div>
