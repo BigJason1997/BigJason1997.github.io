@@ -79,6 +79,10 @@ const config = {
                     title: '哔哩哔哩视频下载',
                     url: 'https://xbeibeix.com/api/bilibili/',
                 },
+                {
+                    title: '电影天堂',
+                    url: 'https://www.dygod.net/',
+                },
             ],
         },
         {
@@ -152,19 +156,19 @@ const config = {
             type: '控制面板',
             links: [
                 {
-                    title: '宝塔Linux（106.53.125.228）',
+                    title: '宝塔Linux（腾讯云）',
                     url: 'http://www.tzy.cool:8888/tencentcloud/',
                 },
                 {
-                    title: '宝塔Linux（虚拟机：192.168.146.140）',
-                    url: 'http://192.168.146.140:8888/94fdd1b5/',
+                    title: '宝塔Linux（雷神 - 虚拟机）',
+                    url: 'http://192.168.1.150:8888/auth_login/',
                 },
                 {
-                    title: '宝塔Windows（梅老板）',
-                    url: 'http://meiko.tzy.cool/:8888/aI3avzfc/',
+                    title: '宝塔Windows（腾讯云 - 梅老板）',
+                    url: 'http://meiko.tzy.cool:8888/aI3avzfc/',
                 },
             ],
         },
     ],
-    websocketUrl: 'wss://110.40.159.23:8080/websocket',
+    websocketUrl: 'wss://meiko.tzy.cool:8080/websocket',
 };
