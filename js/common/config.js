@@ -11,6 +11,10 @@ const config = {
                     url: 'https://fanyi.baidu.com/',
                 },
                 {
+                    title: '必应',
+                    url: 'https://cn.bing.com/',
+                },
+                {
                     title: 'QQ邮箱',
                     url: 'https://mail.qq.com/',
                 },
@@ -117,6 +121,16 @@ const config = {
                 {
                     title: 'Github',
                     url: 'https://github.com/',
+                },
+                {
+                    title: 'springcloud',
+                    url: 'https://spring.io/projects/spring-cloud',
+                    icon: 'https://spring.io/images/favicon-9d25009f65637a49ac8d91eb1cf7b75e.ico',
+                },
+                {
+                    title: 'springcloud版本选型',
+                    url: 'https://start.spring.io/actuator/info',
+                    icon: 'https://spring.io/images/favicon-9d25009f65637a49ac8d91eb1cf7b75e.ico',
                 },
                 {
                     title: 'CSDN',
