@@ -87,6 +87,16 @@ const config = {
                     title: '电影天堂',
                     url: 'https://www.dygod.net/',
                 },
+                {
+                    title: '茶杯狐（看电视剧）',
+                    url: 'https://cupfox.app/',
+                    icon: 'https://p0.meituan.net/dpgroup/cd088044f183d2719f3f9fe56d5c34204207.png',
+                },
+                {
+                    title: '油猴脚本',
+                    url: 'https://greasyfork.org/zh-CN',
+                    icon: 'https://greasyfork.org/packs/media/images/blacklogo16-5421a97c75656cecbe2befcec0778a96.png',
+                },
             ],
         },
         {
@@ -108,6 +118,10 @@ const config = {
                 {
                     title: 'cron表达式生成器',
                     url: 'https://cron.qqe2.com/',
+                },
+                {
+                    title: '文字图案生成器',
+                    url: 'https://www.degraeve.com/img2txt.php',
                 },
             ],
         },
