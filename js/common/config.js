@@ -178,6 +178,16 @@ const config = {
                     title: 'ElasticSearch',
                     url: 'https://www.elastic.co/cn/',
                 },
+                {
+                    title: 'ElectronJS',
+                    url: 'https://www.electronjs.org/',
+                    icon: 'https://www.electronjs.org/images/favicon.b7a59262df48d6563400baf5671da548.ico',
+                },
+                {
+                    title: 'Vue CLI Plugin Electron Builder',
+                    url: 'https://nklayman.github.io/vue-cli-plugin-electron-builder/',
+                    icon: 'https://nklayman.github.io/vue-cli-plugin-electron-builder/favicon.ico',
+                },
             ],
         },
         {
