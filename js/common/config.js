@@ -171,6 +171,11 @@ const config = {
                     icon: 'https://element.eleme.cn/favicon.ico',
                 },
                 {
+                    title: 'Vant',
+                    url: 'https://vant-contrib.gitee.io/vant/v2/#/zh-CN/',
+                    icon: 'https://img01.yzcdn.cn/vant/logo.png'
+                },
+                {
                     title: 'vxe-table',
                     url: 'https://vxetable.cn/v3/#/table/start/install',
                 },
