@@ -63,3 +63,10 @@ html,body{
 .nav-content{
     margin-top: 20px;
 }
+.lbxx{
+    position: fixed;
+    user-select: none;
+    -webkit-user-drag: none;
+    right: 20px;
+    bottom: 20px;
+}

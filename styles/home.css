@@ -3,6 +3,8 @@
 }
 .home .home-content{
     margin-top: 5px;
+    max-height: 600px;
+    overflow: auto;
 }
 .link-container{
     width: 100%;
