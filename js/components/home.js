@@ -6,8 +6,16 @@ Vue.component('home',{
             // 谷歌搜索关键字
             googleKeyword:'',
             // 常用站点
-            favouriteLinks: config.favouriteLinks
+            // favouriteLinks: config.favouriteLinks
+            favouriteLinks: []
         }
+    },
+    created() {
+        fetch('https://www.fastmock.site/mock/97d698adf15f31e59cf3ea4754d472f1/bigjason/menus').then(res => {
+            return res.json()
+        }).then(res => {
+            this.favouriteLinks = res
+        })
     },
     methods: {
         // 百度搜索
