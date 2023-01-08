@@ -45,11 +45,15 @@
                 >
                     <el-menu-item index="home">首页</el-menu-item>
                     <el-menu-item index="chat">聊天室</el-menu-item>
+                    <el-menu-item index="game_plane">飞机大战</el-menu-item>
                 </el-menu>
                 <div class="nav-content" v-show="menuIndex === 'home'">
                     <home />
                 </div>
                 <div class="nav-content" v-show="menuIndex === 'chat'">
+                    <tiny-chat />
+                </div>
+                <div class="nav-content" v-if="menuIndex === 'game_plane'">
                     <tiny-chat />
                 </div>
             </div>

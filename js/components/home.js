@@ -11,7 +11,7 @@ Vue.component('home',{
         }
     },
     created() {
-        fetch('https://www.fastmock.site/mock/97d698adf15f31e59cf3ea4754d472f1/bigjason/menus').then(res => {
+        fetch('https://mock.apifox.cn/m1/2126770-0-default/menus').then(res => {
             return res.json()
         }).then(res => {
             this.favouriteLinks = res
